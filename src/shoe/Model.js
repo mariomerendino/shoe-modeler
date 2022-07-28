@@ -7,7 +7,7 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Model({ ...props }) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('/model.glb')
+  const { nodes, materials } = useGLTF('/all_white_model.glb')
   const [dupedMaterials, updateDupedMaterials] = useState({});
   // This is a hack because all portions of the shoe were using the same material, "Main_"
   // By duplicating the material for each node, we can update colors individually. 
