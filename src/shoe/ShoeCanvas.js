@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Color } from 'three'
 import { Canvas } from "@react-three/fiber";
-import {OrbitControls, useGLTF} from '@react-three/drei'
+import {OrbitControls} from '@react-three/drei'
 import NikeAirJordan from './Model';
 
 const ShoeCanvas = () => {

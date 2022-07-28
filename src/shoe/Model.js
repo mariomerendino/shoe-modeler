@@ -18,11 +18,12 @@ export default function Model({ ...props }) {
     })
 
     updateDupedMaterials(newMaterials)
+  // eslint-disable-next-line
   }, [])
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.Back_Down.geometry} material={dupedMaterials.Back_Down} position={[0.35, -0.46, 1.02]} rotation={[-Math.PI, 0, -Math.PI]}  material-color={props.modifiedColors['Back_Down']} onClick={() => props.updateCurrentSelection('Back_Down')}  />
+      <mesh geometry={nodes.Back_Down.geometry} material={dupedMaterials.Back_Down} position={[0.35, -0.46, 1.02]} rotation={[-Math.PI, 0, -Math.PI]} material-color={props.modifiedColors['Back_Down']} onClick={() => props.updateCurrentSelection('Back_Down')}  />
       <mesh geometry={nodes.Back_Little_Part.geometry} material={materials.Back_Little_Part} position={[0.68, 0.2, 0.98]} rotation={[1.56, 0.07, Math.PI / 2]} material-color={props.modifiedColors['Back_Little_Part']} onClick={() => props.updateCurrentSelection('Back_Little_Part')}/>
       <mesh geometry={nodes.Back_Mid.geometry} material={dupedMaterials.Back_Mid} position={[-0.08, 0.53, 1.1]} rotation={[0, -Math.PI / 2, 0]} material-color={props.modifiedColors['Back_Mid']} onClick={() => props.updateCurrentSelection('Back_Mid')} />.
       <mesh geometry={nodes.Back_Top_.geometry} material={dupedMaterials.Back_Top_} position={[0.09, 0.86, 1.07]} rotation={[Math.PI, -0.26, Math.PI]} material-color={props.modifiedColors['Back_Top_']} onClick={() => props.updateCurrentSelection('Back_Top_')} />.
