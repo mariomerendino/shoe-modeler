@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Color } from 'three'
 import { Canvas } from "@react-three/fiber";
 import {OrbitControls} from '@react-three/drei'
-import NikeAirJordan from './Model';
+import NikeAirJordan from './NikeAirJordan/Model';
 
 const ShoeCanvas = () => {
   const [currentSelection, updateCurrentSelection] = useState(null)
